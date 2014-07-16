@@ -3,6 +3,35 @@ Vaadin: Google map
 
 Дополнение к Vaadin: Google map
 
+## Vaadin Usage
+        
+        class MyApp extends UI {
+            ...
+            public MyApp(){
+            
+                public TextField address = new TextField();
+                private VerticalLayout layout = new VerticalLayout();
+                ...
+                GoogleMap.addComponent(layout);
+                GoogleMap.init();
+                ...
+                address.setInputPrompt("Укажите адрес");
+                address.setWidth("100%");
+                address.setImmediate(true);
+                address.setId("address");           // назначаем id для DOM елемента строки адреса для автокомплита
+                address.addFocusListener(new FieldEvents.FocusListener() {
+                    @Override
+                    void focus(FieldEvents.FocusEvent focusEvent) {
+                        addressFocused();
+                    }
+                });
+                layout.addComponent(address);
+                ...
+                setContent(layout);
+            }
+        }
+        
+
 ## JS Usage
 
     (app.map = new Map("mavpa"))
