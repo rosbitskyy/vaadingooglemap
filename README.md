@@ -6,11 +6,11 @@ Vaadin: Google map autocomplete
 ## Vaadin Usage
         
         class MyApp extends UI {
+            public TextField address = new TextField();
+            private VerticalLayout layout = new VerticalLayout();
             ...
             public MyApp(){
             
-                public TextField address = new TextField();
-                private VerticalLayout layout = new VerticalLayout();
                 ...
                 GoogleMap.addComponent(layout);
                 ...
