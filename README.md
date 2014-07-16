@@ -13,7 +13,6 @@ Vaadin: Google map
                 private VerticalLayout layout = new VerticalLayout();
                 ...
                 GoogleMap.addComponent(layout);
-                GoogleMap.init();
                 ...
                 address.setInputPrompt("Укажите адрес");
                 address.setWidth("100%");
@@ -26,6 +25,7 @@ Vaadin: Google map
                     }
                 });
                 layout.addComponent(address);
+                GoogleMap.init();
                 ...
                 setContent(layout);
             }
