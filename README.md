@@ -1,4 +1,4 @@
-Vaadin: Google map
+Vaadin: Google map autocomplete
 ===============
 
 Дополнение к Vaadin: Google map autocomplete
