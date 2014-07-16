@@ -1,7 +1,7 @@
 Vaadin: Google map
 ===============
 
-Дополнение к Vaadin: Google map
+Дополнение к Vaadin: Google map autocomplete
 
 ## Vaadin Usage
         
